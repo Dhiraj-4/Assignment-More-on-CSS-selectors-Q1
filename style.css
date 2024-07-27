@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header nav ul li a{
+    color: red;
+}
+header nav>h2{
+    color: red;
+    background-color: black;
+}
+header nav div+p{
+    color: red;
+}
+a[href]{
+    color: red;
+    text-decoration: none;
+}
+a[class='active']{
+    color: rgb(0, 255, 0);
+    text-decoration: underline;
+}
+a[target='_self']{
+    background-color: black;
+}
+header nav>p:nth-last-child(1)::after{
+    content: "...";
+}
+li::before{
+    content: "•";
+    color: blue;
+}
+header nav p:nth-child(4)::first-letter{
+    color: red;
+    font-size: 30px;
+}
